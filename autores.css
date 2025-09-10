@@ -20,7 +20,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background: #3b3b98;
+  background: #004643;
   color: white;
   text-align: center;
   padding: 30px 20px;
@@ -40,6 +40,26 @@ header .subtitulo {
   opacity: 0.9;
 }
 
+/* Menu de navegação */
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #ffd32a;
+}
+
+
 /* Conteúdo principal */
 main {
   max-width: 900px;
@@ -55,7 +75,7 @@ article section {
 }
 
 h2 {
-  color: #3b3b98;
+  color: #004643;
   font-size: 1.5rem;
   margin-bottom: 10px;
   border-left: 5px solid #ffd32a;
@@ -80,7 +100,7 @@ ul li {
 
 /* Parágrafo legado */
 .legado {
-  border-left: 4px solid #3b3b98;
+  border-left: 4px solid #004643;
   background: #f1f2f6;
   padding: 10px;
   border-radius: 6px;
@@ -92,7 +112,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  background: #3b3b98;
+  background: #004643;
   color: white;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -159,4 +179,25 @@ footer {
 
 h1 {
     text-align: center;
+}
+
+.video-thumbs {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.video-thumbs .thumb {
+  width: 300px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.video-thumbs .thumb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
