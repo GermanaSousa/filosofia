@@ -17,7 +17,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background: #3b3b98;
+  background: #004643;
   color: white;
   text-align: center;
   padding: 30px 20px;
@@ -72,7 +72,7 @@ article section {
 }
 
 h2 {
-  color: #3b3b98;
+  color: #004643;
   font-size: 1.5rem;
   margin-bottom: 10px;
   border-left: 5px solid #ffd32a;
@@ -96,7 +96,7 @@ ul li {
 
 /* Parágrafo legado */
 .legado {
-  border-left: 4px solid #3b3b98;
+  border-left: 4px solid #004643;
   background: #f1f2f6;
   padding: 10px;
   border-radius: 6px;
@@ -108,7 +108,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  background: #3b3b98;
+  background: #004643;
   color: white;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -179,4 +179,22 @@ footer {
 
 .subtitulo{
   text-align: center;
+}
+
+.video-thumb {
+  text-align: center; /* Centraliza dentro da div */
+  margin: 30px 0;
+}
+
+.video-thumb img {
+  max-width: 90%;     /* Ajusta no celular */
+  height: auto;       /* Mantém proporção */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-thumb img:hover {
+  transform: scale(1.05); /* Pequeno zoom ao passar o mouse */
 }
